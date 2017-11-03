@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <title>Mutai Mwiti</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body style="margin:0px;">
-    <table cellpadding="10px;" cellspacing="0" style="font:12px verdana, sans-serif; width:100%;">
+    <table cellpadding="10px;" cellspacing="0">
         <!--Heading area area !-->
         <tr>
-            <td colspan="2" style="background-color:#679BB7;">
+            <td colspan="2">
                 <h1 style="font-size:18px; margin:10px 0;">Html test</h1>
             </td>
         </tr>
         <!--Graphics area !-->
-        <tr style="height:170px;">
-            <td style="background-color:#bbd2df; width:20%; vertical-align:top;">
+        <tr>
+            <td class="item">
                 GRAPHICS
             </td>
-            <td style="background-color:#f0f0f0; width:80%; vertical-align:top;">
-                <h2 style="font-size:16px; margin:0px;">A circle drawn on a canvas</h2>
+            <td class="item_desc">
+                <h2>A circle drawn on a canvas</h2>
                 <div>
                     <canvas id="circleCanvas" width="560" height="315" style="border:1px solid #d3d3d3;">
                         Your browser does not support the HTML5 canvas tag.
@@ -27,12 +28,12 @@
             </td>
         </tr>
         <!--Multimedia area !-->
-        <tr style="height:170px;">
-            <td style="background-color:#bbd2df; width:20%; vertical-align:top;">
+        <tr>
+            <td class="item">
                 MULTIMEDIA
             </td>
-            <td style="background-color:#f0f0f0; width:80%; vertical-align:top;">
-                <h2 style="font-size:16px; margin:0px;">An embedded youtube video</h2>
+            <td class="item_desc">
+                <h2>An embedded youtube video</h2>
                 <div>
                     <iframe width="560" height="315"
                             src="https://www.youtube.com/embed/eRPNd7Di84M" frameborder="0" allowfullscreen></iframe>
@@ -41,21 +42,21 @@
         </tr>
         <!--Plugins area !-->
         <tr style="height:170px;">
-            <td style="background-color:#bbd2df; width:20%; vertical-align:top;">
+            <td class="item">
                 PLUGINS
             </td>
-            <td style="background-color:#f0f0f0; width:80%; vertical-align:top;">
-                <h2 style="font-size:16px; margin:0px;">Html snippet rendered with plugin</h2>
+            <td class="item_desc">
+                <h2>Html snippet rendered with plugin</h2>
                 <object width="560" height="315" data="plugins/huracan.html"></object>
             </td>
         </tr>
         <!--APIs area !-->
         <tr style="height:170px;">
-            <td style="background-color:#bbd2df; width:20%; vertical-align:top;">
+            <td class="item">
                 APIs
             </td>
-            <td style="background-color:#f0f0f0; width:80%; vertical-align:top;">
-                <h2 style="font-size:16px; margin:0px;">Drag and drop API</h2>
+            <td class="item_desc">
+                <h2>Drag and drop API</h2>
                 <div>
                     <p>Drag Mwiti's image into the rectangle:</p>
                     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"
@@ -67,7 +68,7 @@
         </tr>
         <!--Footer area !-->
         <tr>
-            <td colspan="2" style="background-color:#679BB7;">
+            <td colspan="2">
                 <p style="text-align:center; margin:5px;">Made with Love by M. Mwiti</p>
             </td>
         </tr>

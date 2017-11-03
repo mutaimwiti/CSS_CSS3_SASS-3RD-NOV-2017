@@ -1,0 +1,37 @@
+table{
+    font:12px verdana, sans-serif; width:100%;
+}
+
+$itemWidth: 20%;
+
+//This is a function
+@function getDescWidth($itemWidth){
+    //This is an operation. We are subtracting percentages
+    @return 100% - $itemWidth;
+}
+
+.item{
+    background-color:#bbd2df; width: $itemWidth; vertical-align:top;
+}
+
+.item_desc{
+    //Function getDescWidth is used to set width
+    background-color:#f0f0f0; width: getDescWidth($itemWidth); vertical-align:top;
+    //Nesting. This h2 tag is nested
+    h2{
+        font-size:16px; margin:0px;
+    }
+}
+
+//This is a variable
+$mainColor: #679BB7;
+
+//This is a mixin
+@mixin setBackground($color){
+    background-color: $color;
+}
+
+[colspan='2']{
+    //Mixin setBackground is being used to set background
+    @include setBackground($mainColor)
+}
