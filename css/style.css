@@ -7,7 +7,8 @@ This sass file demonstrates the following sass features:
  */
 table {
   font: 12px verdana, sans-serif;
-  width: 100%; }
+  margin: 0 auto;
+  width: 70%; }
 
 .item {
   background-color: #bbd2df;
